@@ -16,7 +16,7 @@ const ResetPasswordComponent = ({
       </p>
       <div className='flex flex-col justify-items-start mx-5 gap-1'>
         <label htmlFor="fullName" className='text-lg font-semibold text-blue-900'>Họ và tên</label>
-        <input id='fullName' type='text' placeholder='Nhập tên ...'
+        <input id='fullName' type='text' placeholder='Nhập họ và tên ...'
           name="fullName"
           value={resePasswordData.fullName}
           onChange={handleChange}
@@ -58,7 +58,7 @@ const ResetPasswordComponent = ({
       </div>
       <div className='flex flex-col justify-items-start mx-5 gap-1 relative'>
         <label htmlFor="re-password" className='text-lg font-semibold text-blue-900'>Xác nhận password</label>
-        <input id='re-password' type={passwordStatus ? "text" : "password"} placeholder='Nhập password ...'
+        <input id='re-password' type={passwordStatus ? "text" : "password"} placeholder='Xác nhận password...'
         name="rePassword"
         value={resePasswordData.rePassword}
         onChange={handleChange}
