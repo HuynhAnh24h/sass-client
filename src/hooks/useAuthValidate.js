@@ -34,6 +34,11 @@ const useAuthValidate = (values, validations) => {
                     newErrors[field] = "Mật khẩu phải có ít nhất 6 ký tự, chữ hoa, chữ thường và số!";
                 }
             }
+            
+            // Kiểm tra trùng mật khẩu
+            if (rules.rePassword !== rules.newPassword){
+                newErrors[field] = "Mật khẩu không trùng khớp"
+            }
         });
 
         // Kiểm tra trước khi cập nhật state để tránh rerender không cần thiết
