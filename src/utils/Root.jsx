@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom"
 const Root = () =>{
     const {user} = useAuth()
     const navigate = useNavigate()
-    console.log(user)
     // "user","admin","hr","accountant","manager"
     useEffect(()=>{
         switch(user){
